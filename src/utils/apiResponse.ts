@@ -33,8 +33,11 @@ export function Unauthorize(message: string): MessageResponse {
   return { message, status: false };
 }
 
-export function BadRequest(message: string): MessageResponse {
-  return { message, status: false };
+export function BadRequest(
+  message: string,
+  otherResponses?: Record<string, unknown>
+): MessageResponse {
+  return { message, status: false, ...otherResponses };
 }
 
 export function NotFound(message: string): MessageResponse {
