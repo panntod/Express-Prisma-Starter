@@ -9,13 +9,14 @@
     "esModuleInterop": true,
     "strict": true,
     "sourceMap": true,
+    "baseUrl": ".",
     "lib": [
       "esnext"
     ],
     "outDir": "dist",
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     }
   }
