@@ -41,14 +41,11 @@ rootRoute
       app.use("/" + file, route);
 
       console.log(
-        chalk.blue("[ INFO ] ") + "Route '" + file + "' imported successfully."
+        `[${chalk.blue("INFO")}] Route '${file}' imported successfully.`
       );
     } catch (error) {
       console.log(
-        chalk.red("[ ERROR ] ") +
-          "Skipped '" +
-          file +
-          "' module because containing error."
+        `[${chalk.red("ERROR")}] Skipped '${file}' module because containing error.`
       );
     }
   });
